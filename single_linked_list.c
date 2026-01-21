@@ -105,6 +105,7 @@ int main()
 
 		}
 	}
+	return 0;
 }
 
 void load_data_from_file()
@@ -270,4 +271,5 @@ void sort_by_price()
 	save_file(SORTED_FILE);
 	printf("-------Sorting list of items by price-----\n");
 	show_all_items();
+
 }
