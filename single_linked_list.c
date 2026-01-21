@@ -244,7 +244,6 @@ void sort_by_name()
 			}
 		}
 	}
-	save_file(SORTED_FILE);
 	printf("------Sorting list of items by name-----\n");
 	show_all_items();
 }
@@ -273,4 +272,5 @@ void sort_by_price()
 	show_all_items();
 
 }
+
 
