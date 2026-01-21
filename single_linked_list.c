@@ -73,6 +73,7 @@ int main()
 			else
 			{
 				update_item(matching_node);
+				printf("Item updated successfully. \n");
 			}
 			save_file(DATA_FILE);
 			break;
@@ -88,6 +89,7 @@ int main()
 			else
 			{
 				delete_item(matching_node);
+				printf("Item deleted successfully. \n");
 			}
 			save_file(DATA_FILE);
 			break;
@@ -209,8 +211,6 @@ void update_item(struct node * matching_node)
 	scanf("%s", matching_node->item.item_name);
 	printf("Enter item new price: ");
 	scanf("%f", &matching_node->item.item_price);
-
-	printf("Item updated successfully. \n");
 }
 
 void delete_item(struct node *matching_node)
@@ -222,7 +222,6 @@ void delete_item(struct node *matching_node)
 	}
 	*indirect = matching_node->next;
 	free(matching_node);
-	printf("Item deleted successfully. \n");
 }
 
 void sort_by_name()
@@ -272,5 +271,6 @@ void sort_by_price()
 	show_all_items();
 
 }
+
 
 
