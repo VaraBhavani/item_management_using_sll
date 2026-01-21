@@ -6,7 +6,7 @@
 
 #define SIZE 20
 #define DATA_FILE "item_records.dat"
-#define SORTED_FILE "sorted_items.txt"
+#define SORTED_FILE "sorted_items.dat"
 #define NO_ITEMS_FOUND printf("No items found. \n")
 #define ITEM_NOT_FOUND printf("Item not found. \n")
 
@@ -273,3 +273,4 @@ void sort_by_price()
 	show_all_items();
 
 }
+
